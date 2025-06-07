@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/calculadora.css">
+    <title>JavaScript && HTML</title>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-12 my-5">
+                <p class="h1 text-white">
+                    Calculadora JS
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="alert" role="alert" id="alert-form" hidden>
+               
+                </div>
+                <form id="form-calculadora">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="number1"
+                        value=""
+                        aria-describedby="name" placeholder="Ingrese un numero">
+                        <div id="validateText" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="number2" placeholder="Ingrese un segundo numero">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Selecione una operacion" id="operacion">
+                            <option value="0" selected>Selecione una operacion</option>
+                            <option value="+">Sumar</option>
+                            <option value="-">Restar</option>
+                            <!-- <option value="x">Multiplicar</option>
+                            <option value="/">Dividir</option> -->
+                        </select>
+                    </div>
+                                    
+                    <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary" id="btnSubmit">Registrar</button>
+                    </div>
+                    </form>
+            </div>
+            <div class="col-sm-12 col-md-6 mt-1">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Operacion</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="body-table">
+<!--                         <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr> -->
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/calculadora.js"></script>
+</body>
+</html>
